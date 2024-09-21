@@ -1,0 +1,47 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+#calculadora{
+    width: 35%;
+    height: 75%;
+    background-color: slategray;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6, 1f);
+    border-radius: 5px;
+}
+
+
+#barraTexto{
+    width: 85%;
+    height: 50%;
+    font-size: 40px;
+    border-radius: 5px;
+    grid-column-start: span 5;
+    margin: auto;
+}
+
+#operadorIgual{
+    grid-column-start: span 3;
+}
+
+button{
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 25px;
+    margin: auto; /* Centrar los botones en las celdas */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    transition: transform 0.2s; /* Agrega una transición suave */
+}
